@@ -21,6 +21,17 @@
 # IN THE SOFTWARE.
 #++
 
+# $lols = []
+# alias :lol_require :require
+# def require *args
+#   $lols << args.first
+#   puts "requiring #{args.first}:\n\t#{$lols.inspect}"
+#   lol_require *args
+#   $lols.delete args.first
+#   puts "done requiring #{args.first}:\n\t#{$lols.inspect}"
+# end
+
+
 require 'rake/version'
 
 # :stopdoc:
