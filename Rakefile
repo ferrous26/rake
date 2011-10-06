@@ -66,6 +66,7 @@ Rake::TestTask.new do |t|
 end
 
 begin
+  raise LoadError
   require 'rcov/rcovtask'
   IGNORE_COVERAGE_IN = FileList[
     'lib/rake/rdoctask.rb',
